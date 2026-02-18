@@ -19,7 +19,7 @@ def part_c(initial_deposit):
 	
 	if initial_deposit > (down_payment - 100):
 	    r = 0
-	elif initial_deposit * (1 + 1 / 12) ** 36 < down_payment - 100:
+	elif calc_amount_saved(1) < down_payment - 100:
 	    r = None
 	else:
 	    lower_limit = 0
